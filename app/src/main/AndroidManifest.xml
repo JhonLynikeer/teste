@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.repertorio">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="App Repertorios"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Repertorio">
+        <activity
+            android:name=".ShareRepertory"
+            android:exported="false" />
+        <activity
+            android:name=".CreateRepertory"
+            android:exported="false" />
+        <activity
+            android:name=".LibraryMusic"
+            android:exported="false"
+            android:label="Biblioteca"/>
+        <activity
+            android:name=".AddMusic"
+            android:label="Adicionar Musicas" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
