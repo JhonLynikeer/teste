@@ -9,15 +9,28 @@
 
     <ImageView
         android:id="@+id/button_create_repertory"
-        android:layout_width="163dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="23dp"
         android:layout_marginBottom="51dp"
         app:layout_constraintBottom_toBottomOf="@+id/text_create_repertory"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_historic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_library"
+        app:layout_constraintTop_toBottomOf="@+id/text_add_music"
         app:srcCompat="@drawable/button_create_repertory" />
+
+    <ImageView
+        android:id="@+id/button_historic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_historic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_create_repertory"
+        app:layout_constraintTop_toTopOf="@+id/button_create_repertory"
+        app:srcCompat="@drawable/button_historic" />
 
     <ImageView
         android:id="@+id/button_library"
@@ -46,7 +59,7 @@
         android:id="@+id/text_add_music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="31dp"
         android:text="Adicionar\nMusicas"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -58,8 +71,8 @@
         android:id="@+id/text_create_repertory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="149dp"
         android:text="Criar\nRepertorio"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -68,15 +81,28 @@
         app:layout_constraintEnd_toEndOf="@+id/button_create_repertory" />
 
     <TextView
+        android:id="@+id/text_historic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Historico"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/button_historic"
+        app:layout_constraintTop_toBottomOf="@+id/button_create_repertory" />
+
+    <TextView
         android:id="@+id/text_library"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="34dp"
+        android:layout_marginBottom="34dp"
         android:text="Biblioteca\nMusicas"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button_library"
-        app:layout_constraintTop_toBottomOf="@+id/button_add_music" />
+        app:layout_constraintBottom_toTopOf="@+id/button_historic"
+        app:layout_constraintEnd_toEndOf="@+id/button_library" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

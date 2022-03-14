@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0A0013"
-    tools:context=".LibraryMusic">
+    tools:context=".HistoricMusic">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/research_library"
+                    android:id="@+id/research_historic"
                     android:layout_width="342dp"
                     android:layout_height="match_parent"
                     android:background="#DCCFFF"
@@ -33,7 +33,7 @@
                     android:textColor="#575252" />
 
                 <ImageView
-                    android:id="@+id/button_research_library"
+                    android:id="@+id/button_research_historic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -56,25 +56,19 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/check_celebration"
+                    android:id="@+id/check_repertory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Celebração "
+                    android:text="Repertorio  "
                     android:textColor="#A190FF" />
 
                 <CheckBox
-                    android:id="@+id/check_activation"
+                    android:id="@+id/check_favorite"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ativação de Fé "
+                    android:text="Favoritos "
                     android:textColor="#A190FF" />
 
-                <CheckBox
-                    android:id="@+id/check_worship"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Worship "
-                    android:textColor="#A190FF" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView

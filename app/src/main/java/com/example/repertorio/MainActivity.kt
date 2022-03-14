@@ -25,7 +25,12 @@ class MainActivity : AppCompatActivity() {
         binding.buttonLibrary.setOnClickListener {
             libraryMusic()
         }
-
+        binding.buttonCreateRepertory.setOnClickListener {
+            createRepertory()
+        }
+        binding.buttonHistoric.setOnClickListener {
+            historicMusic()
+        }
 
 
     }
@@ -36,6 +41,14 @@ class MainActivity : AppCompatActivity() {
     }
     private fun libraryMusic(){
         val intent = Intent(this,LibraryMusic::class.java)
+        startActivity(intent)
+    }
+    private fun createRepertory(){
+        val intent = Intent(this,CreateRepertory::class.java)
+        startActivity(intent)
+    }
+    private fun historicMusic(){
+        val intent = Intent(this,HistoricMusic::class.java)
         startActivity(intent)
     }
 

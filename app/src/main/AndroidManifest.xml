@@ -10,15 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Repertorio">
         <activity
-            android:name=".ShareRepertory"
-            android:exported="false" />
+            android:name=".HistoricMusic"
+            android:exported="false"
+            android:label="Historicos/Favoritos" />
         <activity
             android:name=".CreateRepertory"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Criar Repertorios" />
         <activity
             android:name=".LibraryMusic"
             android:exported="false"
-            android:label="Biblioteca"/>
+            android:label="Biblioteca" />
         <activity
             android:name=".AddMusic"
             android:label="Adicionar Musicas" />
